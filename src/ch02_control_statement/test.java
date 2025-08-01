@@ -1,12 +1,27 @@
 package ch02_control_statement;
 
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Stream;
+
 public class test {
     public static void main(String[] args) {
-       char grade = 'a';
+        OutputStream os = System.out;
 
-        switch (grade){
-            case 'A', 'a' -> System.out.println("우수");
-            case 'B', 'b' -> System.out.println("일반");
+        int a = 64;
+
+        try {
+            os.write(a);
+            os.flush();
+
+            //os.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+
+
     }
 }
