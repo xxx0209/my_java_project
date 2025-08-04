@@ -8,5 +8,6 @@ public class SportMain {
         football.showINfo();
         System.out.println();
         baseball.showINfo();
+        System.out.println();
     }
 }
