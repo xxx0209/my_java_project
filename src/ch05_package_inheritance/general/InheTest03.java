@@ -8,8 +8,11 @@ public class InheTest03 {
         Latte03 latte = new Latte03("라떼", 6000.0, "아몬드 우유");
 
         americano.printInfo();
+        System.out.println();
         espresso.printInfo();
+        System.out.println();
         latte.printInfo();
+        System.out.println();
 
     }
 }
