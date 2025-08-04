@@ -11,8 +11,8 @@ public class Football extends Sport{
     }
 
     @Override
-    public void showINfo() {
-        super.showINfo();
+    public void showInfo() {
+        super.showInfo();
         System.out.printf("%d개의 하프타임으로 구성이 되며, %d 골이 들어갔습니다.!", halves, golas);
         System.out.println();
     }
