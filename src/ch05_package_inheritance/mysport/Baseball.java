@@ -12,8 +12,8 @@ public class Baseball extends Sport {
     }
 
     @Override
-    public void showINfo() {
-        super.showINfo();
+    public void showInfo() {
+        super.showInfo();
         System.out.printf("%d개의 이닝으로 구성이 되며, 타율 %5.3f 를 기록하였습니다.", innings, hitrate);
         System.out.println();
     }

@@ -5,8 +5,10 @@ public class SportMain {
         Football football = new Football("축구", 11, 1, 5);
         Baseball baseball = new Baseball("야구", 9, 9, 0.412);
 
-        football.showINfo();
+        football.showInfo();
         System.out.println();
-        baseball.showINfo();
+
+        baseball.showInfo();
+        System.out.println();
     }
 }

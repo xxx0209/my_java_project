@@ -9,7 +9,8 @@ public class Sport {
         this.entry = entry;
     }
 
-    public void showINfo() {
+
+    public void showInfo() {
         System.out.printf("%s 경기는 %d명의 엔트리로 구성이 됩니다.", name, entry);
         System.out.println();
     }
