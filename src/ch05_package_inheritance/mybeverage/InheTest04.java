@@ -28,5 +28,15 @@ public class InheTest04 {
         Latte04 latte = (Latte04)beverage03;
         latte.enjoyLatte();
 
+        // 승급 개념과 배열을 같이 사용하기
+        // 배열 초기화 기법 : 타입[] 배열이름 = {요소1, 요소2, ...}
+
+        Beverage04[] beverage = {
+                beverage01,
+                new Espresso04("에스프레소", 3000, 2),
+                new Latte04("라떼", 6000.0, "아몬드 우유")
+        };
+
+
     }
 }
