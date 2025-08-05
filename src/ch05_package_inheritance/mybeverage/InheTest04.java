@@ -34,7 +34,7 @@ public class InheTest04 {
         Beverage04[] beverage = {
                 beverage01,
                 new Espresso04("에스프레소", 3000, 2),
-                new Latte04("라떼", 6000.0, "아몬드 우유")
+                new Latte04("바나나 라떼", 6000.0, "아몬드 우유")
         };
 
 
