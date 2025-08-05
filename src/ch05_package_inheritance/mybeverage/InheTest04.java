@@ -15,5 +15,8 @@ public class InheTest04 {
         Americano04 americano = (Americano04)beverage01;
         americano.sipAmericano();
 
+
+        Beverage04 beverage0w = new Espresso04("에스프레소", 3000, 2);
+
     }
 }
