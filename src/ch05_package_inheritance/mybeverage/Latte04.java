@@ -9,4 +9,8 @@ public class Latte04 extends Beverage04{
     }
 
 
+    public void enjoyLatte() {
+        String message = "%s를 훌짝 훌짝 마십니다.%n";
+        System.out.printf(message, super.getName());
+    }
 }

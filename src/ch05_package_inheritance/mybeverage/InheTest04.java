@@ -26,6 +26,7 @@ public class InheTest04 {
         beverage03.showInfo();
 
         Latte04 latte = (Latte04)beverage03;
+        latte.enjoyLatte();
 
     }
 }
