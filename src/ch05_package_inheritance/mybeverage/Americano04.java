@@ -9,8 +9,8 @@ public class Americano04 extends Beverage04{
     }
 
     public void sipAmericano(){
-        String message = "%n아메리카노를 훌짝 훌짝 마십니다.%n";
-        System.out.printf(message);
+        String message = "%s를 훌짝 훌짝 마십니다.%n";
+        System.out.printf(message, super.getName());
     }
 
 

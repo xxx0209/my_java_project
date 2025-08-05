@@ -15,4 +15,12 @@ public class Beverage04 {
         System.out.printf("음료 이름 : %s%n", this.name);
         System.out.printf("단가 : %.1f%n", this.price);
     };
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
