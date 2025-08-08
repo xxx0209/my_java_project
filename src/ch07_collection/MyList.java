@@ -44,7 +44,11 @@ public class MyList {
         }
         System.out.println("요소크기 : " + list.size());
 
-        
+        System.out.println("------------------------------------");
+        for (int i = 0; i < list.size(); i++) {
+            String data = list.get(i);
+            System.out.println(data);
+        }
 
 
 
