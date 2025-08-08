@@ -31,5 +31,22 @@ public class MyList {
         }
 
         System.out.println("요소크기 : " + list.size());
+
+        findData = "콜드브루";
+        list.set(5, findData);
+
+        findData = "카푸치노";
+        list.remove(findData);
+
+        System.out.println("------------------------------------");
+        for(Object obj: list) {
+            System.out.println(obj);
+        }
+        System.out.println("요소크기 : " + list.size());
+
+        
+
+
+
     }
 }
