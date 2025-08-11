@@ -38,30 +38,30 @@ public class MemberMain {
             System.out.println(message);
         }
 
-        System.out.println("\n회원정보 번호를 이용하여 특정 회원정보을 조회합니다.");
+        System.out.println("\n회원아이디을 이용하여 특정 회원정보을 조회합니다.");
         String findId = "kim"; //칮고자 하는 회원정보 번호
 
         Member member = dao.getOne(findId);
 
         if(member == null) {
-            System.out.println(findId + "회원정보은 존재하지 않습니다.");
+            System.out.println(findId + " 회원아이디는 존재하지 않습니다.");
         } else {
             System.out.println(member.toString());
         }
 
-        System.out.println("\n회원정보 번호를 이용하여 특정 게사물을 삭제합니다.");
+        System.out.println("\n회원아이디를 이용하여 회원 탈퇴 합니다.");
         String deleteId = "kim"; //삭제하고자 하는 회원정보 번호
 
-        int result = dao.removeData(deleteId);
+        int result = dao.deleteData(deleteId);
 
         if (result > 0) {
-            System.out.println(deleteId + " 회원정보을 삭제하였습니다.");
+            System.out.println(deleteId + " 회원아이디로 회원을 탈퇴 하였습니다.");
         } else {
-            System.out.println(deleteId + " 회원정보을 발견하지 못했습니다.");
+            System.out.println(deleteId + " 회원아이디의 회원 정보를 발견하지 못했습니다.");
         }
         System.out.println("\nbefore all delete : " + dao.getSize());
-        System.out.println("회원정보 목록을 전부 삭제합니다.");
-        dao.removeAllMembers();
+        System.out.println("전체 회원이 회원을 탈퇴합니다.");
+        dao.deleteAllMembers();
 
         System.out.println("after all deleted : " + dao.getSize());
     }

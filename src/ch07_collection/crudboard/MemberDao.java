@@ -41,7 +41,7 @@ public class MemberDao {
 
     }
 
-    public int removeData(String deleteId) {
+    public int deleteData(String deleteId) {
         // deleteId는 삭제하고자 하는 회원 아이디
         int cnt = -1; //-1은 '발견' 여부를 나태내는 flag 변수
 
@@ -58,7 +58,7 @@ public class MemberDao {
         return cnt;
     }
 
-    public void removeAllMembers() {
+    public void deleteAllMembers() {
         this.memberList.clear();
     }
 }
